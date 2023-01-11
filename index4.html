@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pregnancy BMI Page</title>
+      <link rel="stylesheet" href="css/style4.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!--=============================================
+  =                 NAVIGATION BAR                =
+  ==============================================-->
+  <div class="wrapper site-header__wrapper">
+    <nav class="nav">
+      <div class="nav__toggle" aria-expanded="false" tabindex="0">
+        <i class="fa-regular fa-bars"></i>
+      </div>      
+      <ul class="nav__wrapper">
+        <span class="nav__item"><a href="index1.html">Home</a></span>
+        <span class="nav__item"><a href="index2.html">Article Page</a></span>
+        <span class="nav__item"><a href="index3.html">Due Date Calculator</a></span>
+        <span class="nav__item"><a href="index4.html">BMI Calculator</a></span>
+      </ul>
+    </nav>
+    <div class="logo-header">
+      <img src="Assets/images/LOGO_.png">
+    </div>
+      <button class="signin-button" aria-label="Sign in">
+      <span>Welcome!</span>
+      </button>
+</div>
+
+  <!--=============================================
+  =             PAGE DESCRIPTION                  =
+  ==============================================-->
+  <br><br>
+  <div class="content">
+    <div>
+      <div class="description-box">
+        <div class="scale">
+          <img src="Assets/images/scale.svg" width="25%">
+        </div>
+        <h1 class="title">BMI Calculator</h1>
+        <p class="description">Knowing what your BMI is important so you can get the right care during your pregnancy.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--=============================================
+  =               BMI CALCULATOR                  =
+  ==============================================-->
+  <div class="container">
+    <div class="Rectangle1"></div>
+    <div class="box">
+      <h1>BMI Calculator</h1>
+      <div class="content">
+        <div class="input">
+          <label for="height">Height</label>
+          <input type="number" id="height" placeholder="0 cm">
+        </div>
+        <div class="input">
+          <label for="weight">Your Pre-Pregnancy Weight</label>
+          <input type="number" id="weight" placeholder="0 kg">
+        </div>
+        <button id="calculate">Calculate Your BMI</button>
+      </div>
+      <div class="result">
+        <p>Your BMI is</p>
+        <div id="result">00.00</div>
+        <p class="comment"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!--=============================================
+  =                  BMI TEXT                     =
+  ==============================================-->
+  <div class="bmi_box">
+    <div class="BMI_text">
+      <br><br>
+      <h2>What is BMI?</h2>
+      Your BMI is a measure that uses your height and weight to work out 
+      if your weight is in a healthy range. For pregnant women your BMI 
+      calculation will be based on your weight before pregnancy.
+      <br><br>
+      Your midwife may measure your height and weigh you to work out your 
+      BMI at your first antenatal visit (the booking appointment). This will 
+      help them find out if you need some extra care during your pregnancy.
+      <br><br>
+      Once you work out your BMI, this is the scale:
+      <br>
+      <div class="BMI-box2">
+          <li>Less than 18.5 = <b>underweight</b></li>
+          <li>18.5 to 24.9 = <b>healthy weight</b></li>
+          <li>25 to 29.9 = <b>overweight</b></li>
+          <li>30 to 39.9 = <b>obese</b></li>
+          <li>40 = <b>severely obese</b></li>
+      </div>
+
+      Try not to be offended if anyone involved with your health care uses one 
+      of these terms to describe your weight. The medical experts looking after 
+      you during pregnancy may need to use them so they can make sure you have 
+      the best advice and support to help you have a healthy pregnancy.
+      <br><br>
+      <h2>What happens if my BMI is not in the 'healthy weight' range?</h2>
+     
+      If you have a high BMI (over 25) before pregnancy or in early pregnancy, this 
+      can affect your health and how your baby develops. The higher your BMI the higher 
+      the risk.<br><br>
+      These risks include:<br>
+      <li>High blood pressure and pre-eclampsia</li>
+      <li>Thrombosis (blood clots)</li>
+      <li>Gestational diabetes (diabetes in pregnancy)</li>
+      <br>
+      This can be difficult to read but you will have extra care throughout your pregnancy 
+      to minimise these risks and have a healthier pregnancy.
+      Read about making a weight management plan here
+      <br><br>
+      <h2>If your BMI is over 30</h2>
+      If you have a BMI over 30 you should be referred to a dietitian for an assessment 
+      and advice about healthy eating  and exercise.
+      You will also have:<br>
+      <li>extra ultrasound scans to check the baby’s development</li>
+      <li>blood pressure tests at every antenatal appointment</li>
+      <li>a gestational diabetes test between 24-28 weeks (if your BMI is over 40 you may 
+          have this test earlier)</li>
+      <li>a risk assessment for thrombosis (blood clots in your legs or lungs) at your 
+          first antenatal appointment, which will then be monitored throughout your pregnancy.
+          You may also need to have injections of low molecular weight heparin to reduce 
+          your risk of blood clots.</li>
+      <br>
+      If your BMI is over 40
+      If you have a BMI over 40 there is a higher risk of complications during labour 
+      or birth. These include:<br>
+      <li>a longer labour</li>
+      <li>premature birth (when a baby is born before 37 weeks)</li>
+      <li>an emergency caesarean  birth</li>
+      <li>a more difficult operation if you need a caesarean section and a higher risk 
+          of complications afterward, for example a wound infection or blood clot</li>
+      <li>anaesthetic complications, especially with general anaesthesia</li>
+      <li>heavy bleeding after birth (postpartum haemorrhage) or at the time of caesarean 
+          section</li>
+      <br>
+      Because of these risks your obstetrician and/or midwife will talk to you about the 
+      safest way and place for you to give birth. You should also be referred to an 
+      anesthetist (a doctor who specialises in pain relief) to talk about pain relief 
+      during labour. 
+      Being affected by obesity does not always mean you will need a caesarean section 
+      but you may be more likely to have one. Find out more about c-section advice for 
+      overweight women.
+      Find out more about being overweight in pregnancy. 
+      <br><br>
+      <h2>If your BMI is under 18.5 or under</h2>
+      If your BMI was less than 18.5 before you became pregnant, you may be advised to 
+      gain more weight than someone who is in the normal range.
+      Your midwife may refer you to the hospital antenatal clinic for extra scans to 
+      check on your baby's growth and development. You may also be referred to a dietitian 
+      to help you work on ways to eat well  and gain a healthy amount of weight.
+      Your midwife or specialist will discuss with you what your target weight gain in 
+      pregnancy should be. This will be based on several factors, including your pre-pregnancy 
+      weight.
+      <br><br>
+      There are many reasons for having a low BMI. For example there might be a medical 
+      reason, such as an overactive thyroid. If you think this might be the case, talk 
+      to your midwife or GP.
+      <br><br>
+      Some women may have an eating disorder (or have had one in the past). It can be 
+      very difficult, but it’s important to tell your midwife or doctor if this is the 
+      case. They will be able to organise extra care during your pregnancy so you and 
+      your baby can stay healthy.
+    </div>
+  </div>
+
+  <!--=============================================
+  =                   FOOTER                      =
+  ==============================================-->
+  <div id="footerwrap">
+    <div class="footer-container">
+      <div class="footerwrap_row">
+        <div class="col-md-8"> <span class="copyright">Copyright &copy; 2023. Design by AJA Group</a></span> </div>
+        <div class="col-md-4"> </div>
+      </div>
+    </div>
+  </div>
+
+  <!--=============================================
+  =                  JS FILE                      =
+  ==============================================-->
+  <script src="js/script4.js"></script>
+</body>

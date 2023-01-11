@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Pregnancy Due Date Calculator Page</title>
+      <link rel="stylesheet" href="css/style3.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!--=============================================
+  =                NAVIGATION BAR                 =
+  ==============================================-->
+  <div class="wrapper site-header__wrapper">
+    <nav class="nav">
+      <div class="nav__toggle" aria-expanded="false" tabindex="0">
+        <i class="fa-regular fa-bars"></i>
+      </div>      
+      <ul class="nav__wrapper">
+        <span class="nav__item"><a href="index1.html">Home</a></span>
+        <span class="nav__item"><a href="index2.html">Article Page</a></span>
+        <span class="nav__item"><a href="index3.html">Due Date Calculator</a></span>
+        <span class="nav__item"><a href="index4.html">BMI Calculator</a></span>
+      </ul>
+    </nav>
+    <div class="logo-header">
+      <img src="Assets/images/LOGO_.png">
+    </div>
+      <button class="signin-button" aria-label="Sign in">
+      <span>Welcome!</span>
+      </button>
+</div>
+
+  <!--=============================================
+  =              PAGE DESCRIPTION                 =
+  ==============================================-->
+  <div class="content">
+    <div>
+      <div class="description-box">
+        <div class="calendar">
+          <img src="Assets/images/calendar.svg" width="15%">
+        </div>
+        <h1 class="title">Due Date Calculator</h1>
+
+        <p class="description">This due date calculator
+            calculates your due date based
+            on last menstrual period.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--=============================================
+  =               DUE DATE CALCULATOR             =
+  ==============================================-->
+
+  <div class="container">
+    <div class="Rectangle1"></div>
+    <div class="box">
+      <h1>Due Date Calculator</h1>
+      <div class="content">
+        <div class="input">
+          <label for="period">The First Day of Your Last Period</label>
+          <div class="dropdown_button">
+            <tr>
+              <td><input type="date" id="begin"></td>
+            </tr>
+          </div>
+        </div>
+        <div class="input">
+          <label for="cycle">Cycle Length (in Days)</label>
+          <div class="day">
+            <form>
+                <select id="mySelect">
+                  <option>28</option>
+                  <option>29</option>
+                  <option>30</option>
+                  <option>31</option>
+                </select>
+            </form>
+          </div>
+        </div>
+        <button class="calculate_button" onclick="calculatedDate()">Calculate My Due Date</button>
+      </div>
+      <div class="result">
+        <p>Your due date is on</h3>
+        <div id="result">dd/mm/yyyy</div>
+        <p class="comment"></p>
+      </div>
+    </div>
+  </div>
+
+  <!--=============================================
+  =                   FOOTER                      =
+  ==============================================-->
+  <div id="footerwrap">
+    <div class="footer-container">
+      <div class="footerwrap_row">
+        <div class="col-md-8"> <span class="copyright">Copyright &copy; 2023. Design by AJA Group</a></span> </div>
+        <div class="col-md-4"> </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="js/script3.js"></script>
+
+</body>

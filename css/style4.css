@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+Raw Blame
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    min-height: 3500px;
+    background: linear-gradient(336deg, #ffffff 2%, #CC61FFDE 70%, #5844D5 110%) no-repeat;
+}
+
+/********************************************
+  *             NAVIGATION BAR              *
+  *******************************************/
+
+.logo-header img{
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.logo img{
+  width: 100px;
+  margin: 0 auto;
+}
+  
+.site-header {
+  position: relative;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(216, 216, 216); 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0rem;
+  padding-bottom: 0rem; 
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: white;
+  border-bottom: 1px solid rgb(183, 183, 183); 
+  z-index: 100;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.nav__wrapper {
+  position: fixed;
+  top: 74px;
+  left: 0;
+  width: Max(225px, 20%);
+  bottom: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-100%);
+  background-color: #ffffff;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  display: block; 
+}
+
+.nav__wrapper.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nav__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+}
+
+.nav__item a {
+  display: block;
+  padding: 1rem; 
+  text-decoration: none;
+  color: black;
+}
+
+.nav__toggle i {
+  color: #333333;
+  transition: color 0.2s ease-in-out;
+  flex: 1;
+}
+
+.nav__toggle:hover i {
+  color: #dca3ee;
+}
+
+.nav__toggle {
+  transform: translateX(20px);
+}
+  
+.signin-button {
+  border-radius: 7px;
+  background-color: white;
+  color: black;
+  padding: 6px 10px;
+  border: 2px solid #714CDC;
+  margin-right: 5px;
+}
+
+.signin-button svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.signin-button:hover {
+  background-color: #5B3DB7;
+  color: white;
+  cursor: pointer;
+}
+
+.signin-button:active {
+  transform: scale(0.98);
+}
+
+.signin-button {
+    transform: translateX(-20px);
+  }
+
+
+
+/********************************************
+  *           PAGE DESCRIPTION              *
+  *******************************************/
+.content {
+  padding: 0 40px;
+}
+
+.description-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 40%;
+  height: 350px;
+  margin: 200px auto 70px auto;
+  justify-content: middle;
+  background: rgb(255, 255, 255);
+  background-blend-mode: multiply;
+  mix-blend-mode: normal;
+  border-radius: 20px;
+  box-shadow: 5px 7px 20px #3d3d3d;
+}
+
+.title {
+  font-size: 25px;
+  padding: 1px 30px 0 30px;
+  margin-top: 0px;
+}
+
+.description{
+  margin-top: -10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 30px;
+  text-align: center;
+  padding: 1px 42px;
+  text-align: center;
+  color: #4C434F;
+}
+
+@media (min-width: 1080px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .description-box {
+    width: 50%;
+    height: 330px;
+  }
+}
+  
+@media (max-width: 960px) {
+  .description-box {
+    width: 55%;
+  }
+  .title {
+    font-size: 25px;
+  }
+}
+  
+@media (max-width: 800px) {
+  .description-box {
+    width: 65%;
+  }
+  .title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+}
+  
+@media (max-width: 600px) {
+  .description-box {
+    width: 75%;
+    height: 270px;
+  }
+  .title {
+    font-size: 25px;  
+    margin-top: 5px;
+  }
+  .description {
+    font-size: 0.95rem;
+    padding: 0px 20px;
+    line-height: 30px;
+    margin-top: -10px;
+  }
+}
+  
+@media (max-width: 480px) {
+  .description-box {
+    width: 85%;
+  }
+  .title {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  .description {
+    margin-top: -10px;
+    font-size: 0.95rem;
+    line-height: 30px;
+    padding: 0 20px;
+  }
+}
+  
+@media (max-width: 410px) {
+  .description-box {
+    width: 90%;
+  }
+  .title {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  .description {
+    font-size: 0.95rem;
+    line-height: 25px;
+    padding: 0 20px;
+    margin-top: -10px;
+  }
+}
+  
+@media (max-width: 360px) {
+    .description-box {
+      width: 90%;
+    }
+    .title {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+    .description {
+      font-size: 0.85rem;
+      line-height: 25px;
+      padding: 0 10px;
+      margin-top:-10px;
+    }
+}
+
+/********************************************
+  *            BMI CALCULATOR               *
+  *******************************************/
+.container {
+  width: 100%;
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Rectangle1 {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 50%;
+  margin-left: -300px;
+  right: 50%;
+  margin-right: -300px;         /* THIS IS SO FUCKING COOL */
+  top: -90%;
+  background: rgba(139, 82, 170, 0.253);
+  background-blend-mode: multiply;
+  mix-blend-mode: normal;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.box {
+  background: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  height: 150px;
+  padding: 10px;
+  margin-top: 300px;
+  justify-content: middle;
+  background-blend-mode: multiply;
+  mix-blend-mode: normal;
+  border-radius: 30px;
+}
+
+h1 {
+  font-weight: bold;
+  color:  #460559;
+  font-size: 36px;
+  padding: 30px 0;
+}
+
+.input {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.3);
+  border-radius: 28px;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+
+.input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #4C434F;
+  margin-bottom: 20px;
+}
+
+.input input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(86, 67, 212);
+  width: 60%;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#calculate {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: #7750E0;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 12px 0;
+  width: 90%;
+  outline: none;
+  border: none;
+  transition: background 0.2s ease;
+  margin-bottom: -10px;
+}
+
+#calculate:hover {
+  background: #dca3ee;
+}
+
+.result {
+  padding: 30px 20px;
+  margin-bottom: 2px;
+}
+
+.result p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #4C434F;
+  margin-bottom: 15px;
+}
+
+.result #result {
+  font-size: 36px;
+  font-weight: 900;
+  color: #6d3f7d;
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 55px;
+  margin-bottom: 2px;
+}
+
+.comment {
+  color: #4632ce;
+  font-weight: 800;
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 450px;
+  }
+  .Rectangle1 {
+    width: 500px;
+    left: 50%;
+    margin-left: -250px;
+    right: 50%;
+    margin-right: -250px;  
+  }
+  .calculate_button {
+    width: 300px;
+  }
+}
+
+@media (max-width: 540px) {
+  .box {
+    width: 400px;
+    left: -1%;
+  }
+  .Rectangle1 {
+    width: 420px;
+    left: 50%;
+    margin-left: -210px;
+    right: 50%;
+    margin-right: -210px;  
+  }
+  .calculate_button {
+    width: 250px;
+  }
+  
+}
+
+@media (max-width: 430px) {
+  .box {
+    width: 350px;
+  }
+  .Rectangle1 {
+    top: -85%;
+    width: 320px;
+    left: 50%;
+    margin-left: -160px;
+    right: 50%;
+    margin-right: -160px;  
+  }
+  .input label {
+    font-size: 16px;
+  }
+  
+  .calculate_button {
+    width: 200px;
+  }
+  .result #result {    /* how tf this not working? */
+    font-size: 20px;
+  }  
+}
+
+@media (max-width: 350px) {
+  .box {
+    width: 300px;
+  }
+  .Rectangle1 {
+    width: 280px;
+    left: 50%;
+    margin-left: -140px;
+    right: 50%;
+    margin-right: -140px;  
+    top: -90%;
+    height: 550px;
+  }
+  .calculate_button {
+    width: 150px;
+  }
+  .result #result {     /* this too */
+    font-size: 20px;
+  }  
+}
+
+
+
+/********************************************
+  *                BMI TEXT                 *
+  *******************************************/
+
+
+.BMI-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 180px;
+  height: 100%;
+  position: relative; 
+  margin: 60px auto 60px auto;
+  justify-content: middle;
+  background: rgb(255, 255, 255);
+  background-blend-mode: multiply;
+  mix-blend-mode: normal;
+  border-radius: 100px;
+  box-shadow: 5px 7px 20px #888888;
+}
+
+.BMI_text{
+  color: #352f37;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  position: relative;
+  width: 75%;
+  margin: 250px auto 400px auto;
+  top: 70%;
+  line-height: 35px;
+}
+
+.BMI_text li {
+  margin-bottom: 7px;
+}
+
+
+/********************************************
+  *                FOOTER                   *
+  *******************************************/
+#footerwrap {
+	background: #460559;
+	padding-top: 5px;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	text-align: center;
+  margin-top: auto;
+}
+
+#footerwrap span.copyright {
+	line-height: 60px;
+	color: rgb(255, 253, 253);
+	font-weight: 400;
+}
+
+#footerwrap span.copyright a {
+	color: #888;
+	border-bottom: 1px dotted;
+}
+
+#footerwrap h4 {
+	color: white;
+}

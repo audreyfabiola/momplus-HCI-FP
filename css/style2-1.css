@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+Raw Blame
+
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+
+html{
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 1000px;
+  background: linear-gradient(0deg, #ffffff 2%,  #CC61FFDE 70%, #5844D5 110%) no-repeat;
+}
+
+section{
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/********************************************
+  *           NAVIGATION BAR                *
+  *******************************************/
+
+.logo-header img{
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+}
+  
+.logo img{
+  width: 100px;
+  margin: 0 auto;
+}
+    
+.site-header {
+  position: relative;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(216, 216, 216); 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+.site-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0rem;
+  padding-bottom: 0rem; 
+  
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(183, 183, 183); 
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  z-index: 100;
+}
+    
+.nav__wrapper {
+  position: fixed;
+  top: 74px;
+  left: 0;
+  width: Max(225px, 20%);
+  bottom: 0;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-100%);
+  background-color: #ffffff;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  display: block; }
+
+.nav__wrapper.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+.nav__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.nav__item a {
+  display: block;
+  padding: 1rem; 
+  text-decoration: none;
+  color: black;
+}
+
+.nav__toggle i {
+  color: #333333;
+  transition: color 0.2s ease-in-out;
+  flex: 1;
+}
+
+.nav__toggle:hover i {
+  color: #dca3ee;
+}
+
+.nav__toggle {
+  transform: translateX(20px);
+}
+  
+.signin-button {
+  border-radius: 7px;
+  background-color: white;
+  color: black;
+  padding: 6px 10px;
+  border: 2px solid #714CDC;
+  margin-right: 5px;
+}
+
+.signin-button svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.signin-button:hover {
+  background-color: #5B3DB7;
+  color: white;
+  cursor: pointer;
+}
+
+.signin-button:active {
+  transform: scale(0.98);
+}
+
+.signin-button {
+  transform: translateX(-20px);
+}
+
+@media (min-width: 1080px) {
+  h1 {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h3 {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/********************************************
+*                HEADINGS                   *
+*********************************************/
+
+h1 {
+  color: #460559;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3, .h3 {
+  color: #4C434F;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: .5px;
+}
+
+p {
+  color: #4C434F;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+/********************************************
+  *            ARTICLE HEADER               *
+  *******************************************/
+.post-header{
+  width: 100%;
+  height: 200px;
+  margin-top: 130px;
+}
+
+.post-container{
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.header-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-home{
+  color: #460559;
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header-title{
+  width: 90%;
+  font-size: 2.6rem;
+  color: #460559;
+  text-align: center;
+  line-height: 50px;
+}
+
+.header-desc{
+  width: 90%;
+  font-size: 1.5rem;
+  color: #460559;
+  text-align: center;
+  line-height: 40px;
+}
+
+.header-img{
+  width: 80%;
+  height: 80%;
+  margin-top: -20%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/********************************************
+  *            DOCTOR PROFILE               *
+  *******************************************/
+
+.wrapper-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 220px auto 0 auto;
+}
+
+.profile-wrapper { 
+  border-radius: 35px; 
+  background-color: white;
+  margin-right: 30px;
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  
+}
+
+.wrapper p {
+  font-size: 1.1rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+}
+
+.text-sm {
+  color: #4C434F;
+  font-size: 15px;
+}
+
+@media (max-width: 468px) {
+  .wrapper p {
+    font-size: 14px;
+  }
+}
+
+/********************************************
+  *            ARTICLE CONTENT              *
+  *******************************************/
+
+.text{
+  color: #4C434F;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: justify;
+  width: 80%;
+  position: relative;
+  margin: 30px auto;
+}
+
+.content {
+  margin-top: 70px;
+}
+
+.mid{
+  color: #4C434F;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 75%;
+  position: relative; 
+  margin: auto;
+}
+
+.text li {
+  margin-bottom: 3px;
+}
+
+@media (max-width: 768px) {
+  .wrapper-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-wrapper { 
+    border-radius: 30px; 
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+}
+
+/********************************************
+  *                FOOTER                   *
+  *******************************************/
+#footerwrap {
+  background: #460559;
+  padding: 5px 0 0px 0;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  margin-top: auto;
+}
+
+#footerwrap span.copyright {
+	line-height: 60px;
+	color: white;
+	font-weight: 400;
+}
+
+#footerwrap span.copyright a {
+	color: white;
+	border-bottom: 1px dotted;
+}
+
+#footerwrap h4 {
+	color: white;
+}
