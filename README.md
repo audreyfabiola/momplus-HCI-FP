@@ -1,7 +1,7 @@
 # <img src="Assets/images/LOGO2.png" width="300"> 
 Live Link: https://audreyfabiola.github.io/momplus-HCI-FP/
 
-Demo Video Link:
+Demo Video Link: https://www.youtube.com/watch?v=KKu3IS0CE5Q
 
 Class: L1AC
 
