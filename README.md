@@ -55,3 +55,13 @@ Our wesite has four main features:
 ## Others
 - Assets - folder for images used in the source code
 - Documents - Other necessary documents such as poster, mockup, storyboard, test cases, scenarios, and report
+
+## Screenshot of the Website
+<img src="Assets/screenshot/login.png"> 
+<img src="Assets/screenshot/main.png"> 
+<img src="Assets/screenshot/main2.png"> 
+<img src="Assets/screenshot/main3.png"> 
+<img src="Assets/screenshot/article.png"> 
+<img src="Assets/screenshot/article2.png"> 
+<img src="Assets/screenshot/due.png"> 
+<img src="Assets/screenshot/bmi.png"> 
