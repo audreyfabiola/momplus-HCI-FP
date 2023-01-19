@@ -25,7 +25,7 @@ Our wesite has four main features:
 
 ## Contents
 
-### HTML 
+### HTML Files
 
 - index.html - sign in and sign up page
 - index1.html - home page
@@ -51,8 +51,7 @@ Our wesite has four main features:
 - script3.js - js for index3.html
 - script4.js - js for index4.html 
 
-
-## Others
+### Others
 - Assets - folder for images used in the source code
 - Documents - other necessary documents such as poster, mockup, storyboard, test cases, scenarios, and report
 
@@ -61,6 +60,8 @@ Our wesite has four main features:
 <img src="Assets/screenshot/main.png"> 
 <img src="Assets/screenshot/main2.png"> 
 <img src="Assets/screenshot/main3.png"> 
+<img src="Assets/screenshot/main4.png"> 
+<img src="Assets/screenshot/main5.png"> 
 <img src="Assets/screenshot/article.png"> 
 <img src="Assets/screenshot/article2.png"> 
 <img src="Assets/screenshot/due.png"> 
