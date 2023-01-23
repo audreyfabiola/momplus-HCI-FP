@@ -18,14 +18,14 @@ mom+ is a website designed to provide moms or their beloved ones for a mom's pre
 
 ## Features
 Our wesite has four main features:
-- 🏠 Home Page
+- 🏠 Home page
 - 📰 Month-by-month articles from reliable sources
 - 📅 Due-date calculator 
 - 🧮 BMI calculator
 
 ## Contents
 
-### HTML 
+### HTML Files
 
 - index.html - sign in and sign up page
 - index1.html - home page
@@ -35,7 +35,7 @@ Our wesite has four main features:
 - index4.html - BMI calculator
 
 
-## CSS Files
+### CSS Files
 - style.css - stylesheet for index.html
 - style1.css - stylesheet for index1.html
 - style2.css - stylesheet for index2.html
@@ -43,24 +43,25 @@ Our wesite has four main features:
 - style3.css - stylesheet for index3.html
 - style4.css - stylesheet for index4.html
 
-## JS Files
+### JS Files
 - script.js - js for index.html 
 - script1.js - js for index1.html
 - script2.js - js for index2.html 
-- script2-1.js -used for index2-1.html, index2-2.html, index2-3.html, index2-4.html, index2-5.html, index2-6.html, index2-7.html, index2-8.html, index2-9.html
+- script2-1.js -js for index2-1.html, index2-2.html, index2-3.html, index2-4.html, index2-5.html, index2-6.html, index2-7.html, index2-8.html, index2-9.html
 - script3.js - js for index3.html
 - script4.js - js for index4.html 
 
-
-## Others
+### Others
 - Assets - folder for images used in the source code
-- Documents - Other necessary documents such as poster, mockup, storyboard, test cases, scenarios, and report
+- Documents - other necessary documents such as poster, mockup, storyboard, test cases, scenarios, and report
 
 ## Screenshots of the Website
 <img src="Assets/screenshot/login.png"> 
 <img src="Assets/screenshot/main.png"> 
 <img src="Assets/screenshot/main2.png"> 
 <img src="Assets/screenshot/main3.png"> 
+<img src="Assets/screenshot/main4.png"> 
+<img src="Assets/screenshot/main5.png"> 
 <img src="Assets/screenshot/article.png"> 
 <img src="Assets/screenshot/article2.png"> 
 <img src="Assets/screenshot/due.png"> 
